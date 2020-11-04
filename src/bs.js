@@ -11,7 +11,7 @@ function bs(array, value, start = null, end = null) {
     const item = array[index];
 
     if (item == value) {
-        console.log(value)
+
         return `Value ${value} found at array[${index}]`;
     }
     else if (item < value) {

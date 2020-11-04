@@ -9,12 +9,11 @@ function BinarySearch(props) {
     if (input) {
         if (bs(props.arr, input) !== result) {
             const d = new Date().getMilliseconds()
-            console.log(d)
+
             setResult(bs(props.arr, input))
             const e = new Date().getMilliseconds()
-            console.log(e)
+
             const diff = e - d;
-            console.log('difference', diff)
             setTimer(diff)
 
         }

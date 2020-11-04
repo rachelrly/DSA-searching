@@ -22,8 +22,9 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    min-height: 100vh;
     padding: 1rem;
 }
 
@@ -62,10 +63,30 @@ h3{
 }
 
 
+
+
+
 @media all and (min-width: 500px){
     section{
         flex-direction: row;
         align-items: flex-start;
         padding-top: 4rem;
+        
     }
+    main{
+        height: 100vh;
+    }
+
+    
+    
+}
+
+@media all and (min-width: 650px){
+    h1{
+        font-size: 3rem;
+    }
+    main > * {
+        max-width: 800px;
+    }
+
 }

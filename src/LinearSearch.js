@@ -9,10 +9,10 @@ function LinearSearch(props) {
     if (input) {
         if (ls(props.arr, input) !== result) {
             const d = new Date()
-            console.log(d)
+
             setResult(ls(props.arr, input))
             const diff = new Date() - d;
-            console.log(diff)
+
             setTimer(diff)
 
         }
