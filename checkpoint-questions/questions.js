@@ -3,14 +3,14 @@ function binarySearch(array, value, start = null, end = null, c = 0) {
     end = end === null ? array.length : end;
 
     if (c > 30) {
-        return true;
+        return 'This array has ran into an infinite loop and will stop running. Please change input.';
     }
 
     c++
 
     if (start > end) {
         console.log(`Value ${value} not found in this array.`)
-        return -1
+        return `Value ${value} not found in this array.`
     }
 
     const index = Math.floor((start + end) / 2);
