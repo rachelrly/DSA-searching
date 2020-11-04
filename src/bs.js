@@ -4,7 +4,7 @@ function bs(array, value, start = null, end = null) {
     end = end === null ? array.length : end;
 
     if (start > end) {
-        return `Value ${value} not found in this array.`
+        return `Value ${value} not found in this array`
     }
 
     const index = Math.floor((start + end) / 2);
@@ -12,7 +12,7 @@ function bs(array, value, start = null, end = null) {
 
     if (item == value) {
         console.log(value)
-        return `Value ${value} found at index ${index}`;
+        return `Value ${value} found at array[${index}]`;
     }
     else if (item < value) {
         return bs(array, value, index + 1, end);

@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
       <h1>Binary vs. Linear Search</h1>
-      <h2 className='arr'>[{arr.join(', ')}]</h2>
+      <h2 className='arr'>array = [{arr.join(', ')}]</h2>
       <section>
         <BinarySearch arr={arr} />
         <LinearSearch arr={arr} />
