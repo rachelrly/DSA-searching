@@ -3,7 +3,7 @@ import bs from './bs';
 
 function BinarySearch(props) {
     const [result, setResult] = useState(null);
-    const [input, setInput] = useState(' ');
+    const [input, setInput] = useState('');
 
 
     if (input) {
@@ -17,7 +17,7 @@ function BinarySearch(props) {
         <div>
             <h3>Binary Search</h3>
             <textarea value={input} onChange={e => setInput(e.target.value)} name='binary-search' />
-            {result
+            {result && input.trim() > 0
                 ? <div className='result'>
                     <p>{result}</p>
                 </div>

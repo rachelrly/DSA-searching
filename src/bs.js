@@ -3,8 +3,6 @@ function bs(array, value, start = null, end = null) {
     start = start === null ? 0 : start;
     end = end === null ? array.length : end;
 
-    console.log(value)
-
     if (start > end) {
         return `Value ${value} not found in this array.`
     }
